@@ -8,7 +8,6 @@ int main(){
     Box box1;
     
     Box box2(4,5,7);
-
     box2.print();
 
     box2.setWidth(9);
