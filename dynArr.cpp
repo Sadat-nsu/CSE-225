@@ -1,4 +1,5 @@
 #include "dynArr.h"
+#include ".git/dynArr.h"
 #include <cstddef>
 using namespace std;
 
@@ -23,5 +24,13 @@ void dynArr::setValue(int index, int value){
 
 int dynArr::getValue(int index){
     return data[index];
+}
+
+void dynArr::allocate(int s){
+    if(data != nullptr){
+        delete [] data;
+    }
+    data = new int[s];
+    size=s;
 }
 
