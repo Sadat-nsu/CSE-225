@@ -10,8 +10,11 @@ class dynArr{
     dynArr();
     dynArr(int);
     ~dynArr();
+
     void setValue(int, int);
     int getValue(int);
+    void allocate(int s);
+
 
 
 };
