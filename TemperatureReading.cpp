@@ -28,7 +28,7 @@ void TemperatureReading<T>::inputReading(){
     }
 
     for (int i=0;i<days;i++){
-        cout << "Enter temperature of day " << "i+1 " << ":" << endl;
+        cout << "Enter temperature of day " << (i+1 ) << ":" << endl;
         cin >> temperature[i]; 
     }
 }
@@ -58,6 +58,6 @@ void printSummary(const TemperatureReading<U> &obj){
         return;
     }
     for(int i=0; i<obj.days; i++) {
-        cout << "Day " << i+1 << " : " << obj.temperature << endl;
+        cout << "Day " << (i+1) << " : " << obj.temperature[i] << endl;
     }
 }

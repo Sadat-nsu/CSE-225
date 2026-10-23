@@ -4,7 +4,7 @@
 template<class T>
 class TemperatureReading{
 private:
-    T temperature;
+    T *temperature;
     int days;
 
 public: 
@@ -19,4 +19,5 @@ public:
     friend void printSummary(const TemperatureReading<U> &obj);
 
 };
+#include "TemperatureReading.cpp"
 #endif
