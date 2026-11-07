@@ -2,15 +2,15 @@
 #define TEMPERATURE_READING_H
 
 template<class T>
-class TempratureReading{
+class TemperatureReading{
 private:
-    T temprature;
+    T temperature;
     int days;
 
 public: 
-    TempratureReading();
-    TempratureReading(int d);
-    ~TempratureReading();
+    TemperatureReading();
+    TemperatureReading(int d);
+    ~TemperatureReading();
 
     void inputReading();
     T getHighest();
